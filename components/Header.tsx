@@ -25,12 +25,12 @@ export default function Header() {
       link: "/",
     },
     {
-      name: "Fun Facts",
+      name: "Play time!",
       link: "/fun-facts",
     },
     {
-      name: "Photos & Videos",
-      link: "/photos-videos",
+      name: "Albums & Songs",
+      link: "/media",
     },
     {
       name: "About me",
@@ -39,12 +39,10 @@ export default function Header() {
   ];
 
   const renderList = () => {
-    return itemList.map((item) => {
+    return itemList.map((item, index) => {
       return (
-        <HeaderItem>
-          <Link href={item.link} key={item.name}>
-            {item.name}
-          </Link>
+        <HeaderItem key={index}>
+          <Link href={item.link}>{item.name}</Link>
         </HeaderItem>
       );
     });

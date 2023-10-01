@@ -15,7 +15,17 @@ const Abc = styled.div`
 const Home: NextPageWithLayout = () => {
   return (
     <div>
-      <main>asasasas</main>
+      <main>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KudedLV0tP0?si=qY7DF2YEWdLO6H-m"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </main>
     </div>
   );
 };
